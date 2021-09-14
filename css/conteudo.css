@@ -97,7 +97,7 @@
 }
 
 .button__watch {
-    background: var(--verde) no-repeat url(/image/play.svg) 15px center;
+    background: var(--verde) no-repeat url(./image/play.svg) 15px center;
     border: none;
     margin-right: 25px;
 }
