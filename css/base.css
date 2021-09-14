@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(90deg, var(--azul) 0%, var(--verde) 100%) bottom;
+}
+
+:root {
+    --azul: #1A4855;
+    --verde: #628E75;
+    --fonte-branca: #F9F9F9;
+    --fonte-preta: #212429;
+    --fonte-secundaria: #A4A4A4;
+}
+
+/* Scroll Bar */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: var(--verde);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: var(--azul);
+    border-radius: 20px;
+    border: 2px solid var(--verde);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--azul) var(--verde);
+}

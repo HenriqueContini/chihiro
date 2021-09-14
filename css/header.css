@@ -1,0 +1,25 @@
+.header__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto;
+    max-width: 500px;
+    padding: 3% 25px 5% 25px;
+}
+
+.header__logo {
+    width: 120px;
+}
+
+.header__container__social {
+    display: flex;
+    justify-content: space-between;
+    width: 155px;
+}
+
+@media screen and (min-width: 1024px) {
+    .header__container {
+        max-width: 1200px;
+    }
+}

@@ -1,0 +1,114 @@
+.banner__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 500px;
+    padding: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__container {
+        flex-direction: row-reverse;
+        max-width: 1200px;
+        column-gap: 150px;
+    }
+
+    .banner__side-2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+/* Img */
+
+.img {
+    width: 100%;
+}
+
+/* Content */
+
+.banner__content {
+    margin-bottom: 40px;
+}
+
+.banner__content__author {
+    color: var(--fonte-branca);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3%;
+    margin-bottom: 6px;
+}
+
+.banner__content__title {
+    color: var(--fonte-branca);
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.banner__content__description {
+    color: var(--fonte-branca);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 769px) {
+    .banner__content__author {
+        font-size: 20px;
+    }
+
+    .banner__content__title {
+        font-size: 68px;
+    }
+
+    .banner__content__description {
+        font-size: 16px;
+    }
+}
+
+/* Buttons */
+
+.banner__button {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    background: transparent;
+    color: var(--fonte-branca);
+    font-family: 'Poppins' sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 45px;
+    text-transform: uppercase;
+    transform: skew(-15deg);
+    width: 225px;
+}
+
+.button:hover {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.button__watch {
+    background: var(--verde) no-repeat url(/image/play.svg) 15px center;
+    border: none;
+    margin-right: 25px;
+}
+
+.button__trailer {
+    background-color: transparent;
+    border: 3px solid var(--verde);
+}
+
+@media screen and (max-width: 768px) {
+    .button__trailer {
+        display: none;
+    }
+}
